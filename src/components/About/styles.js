@@ -66,4 +66,22 @@ export const Container = styled.div`
     color: #0095ff;
     border-bottom: 2px solid #0095ff;
   }
+  @media (max-width: 810px) {
+    .arrows {
+      justify-content: center !important;
+      margin-right: 0px !important;
+    }
+    .single-item {
+      max-width: 330px !important;
+    }
+  }
+  @media (max-width: 480px) {
+    .mural,
+    .target {
+      flex-direction: column;
+      .button {
+        display: inline !important;
+      }
+    }
+  }
 `;

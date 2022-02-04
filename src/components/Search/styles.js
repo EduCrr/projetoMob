@@ -6,6 +6,11 @@ export const Container = styled.div`
   margin-top: -4.5rem;
   display: flex;
   justify-content: space-around;
+  @media (max-width: 810px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Banner = styled.div`
@@ -39,7 +44,9 @@ export const Banner = styled.div`
       border-radius: 30px;
       height: 40px;
     }
-    p {
+    img {
+      display: flex;
+      height: 20px;
       margin-right: 20px;
       cursor: pointer;
     }
@@ -73,5 +80,20 @@ export const Banner = styled.div`
   }
   .info {
     margin-bottom: 30px;
+  }
+  @media (max-width: 810px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 480px) {
+    width: auto;
+  }
+  @media (max-width: 375px) {
+    h1,
+    h2 {
+      font-size: 20px !important;
+    }
+    h3 {
+      font-size: 17px !important;
+    }
   }
 `;

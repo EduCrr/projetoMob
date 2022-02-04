@@ -63,4 +63,32 @@ export const Container = styled.div`
     max-width: 1200px;
     margin: auto;
   }
+  @media (max-width: 1024px) {
+    .content,
+    .final {
+      padding: 0px 20px;
+    }
+  }
+  @media (max-width: 810px) {
+    .content {
+      flex-direction: column;
+    }
+    .left-side,
+    .right-side,
+    .final {
+      width: 100% !important;
+    }
+
+    .left {
+    }
+    nav {
+      width: 100% !important;
+
+      ul {
+        justify-content: center;
+        padding: 0;
+        width: 100% !important;
+      }
+    }
+  }
 `;

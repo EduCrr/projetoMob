@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState, useRef } from "react";
+import Fade from "react-reveal/Fade";
 export const About = () => {
   const sliderRef = useRef();
 
@@ -46,18 +47,11 @@ export const About = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
     ],
@@ -70,15 +64,17 @@ export const About = () => {
         <h2 style={{ color: "#bbb" }}>Prestador de serviço</h2>
       </div>
       <div className="items">
-        <Slider {...settings} ref={sliderRef}>
-          {list.map((item, k) => (
-            <div className="single-item" key={k}>
-              <img src={item.icone} alt={item.title} />
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-            </div>
-          ))}
-        </Slider>
+        <Fade bottom>
+          <Slider {...settings} ref={sliderRef}>
+            {list.map((item, k) => (
+              <div className="single-item" key={k}>
+                <img src={item.icone} alt={item.title} />
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </Slider>
+        </Fade>
         <div className="arrows">
           <div onClick={goPrev}>
             <img src="/assets/left.png" />
@@ -90,7 +86,9 @@ export const About = () => {
       </div>
       <div className="mural">
         <h1 style={{ color: "#860689" }}>Veja nosso</h1>
-        <button>mural de serviços</button>
+        <Fade top cascade>
+          <button>mural de serviços</button>
+        </Fade>
       </div>
     </C.Container>
   );

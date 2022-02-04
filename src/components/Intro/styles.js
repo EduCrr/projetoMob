@@ -13,7 +13,7 @@ export const Container = styled.div`
     url("https://images.unsplash.com/photo-1496404690491-28c5b1ecde19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=777&q=80");
   .text {
     height: inherit;
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     margin: auto;
     align-items: center;
@@ -38,6 +38,15 @@ export const Container = styled.div`
       100% {
         opacity: 1;
         transform: translateX(0);
+      }
+    }
+  }
+  @media (max-width: 660px) {
+    .text {
+      font-size: 25px !important;
+      text-align: center;
+      p {
+        line-height: 33px !important;
       }
     }
   }
