@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 export const Search = () => {
   return (
     <C.Container>
-      <C.Banner color={"#0095ff"} style={{ backgroundColor: "#860689 " }}>
+      <C.Banner color={"#0095ff"} style={{ backgroundColor: "#5e04b3 " }}>
         <Fade bottom cascade>
           <div className="title">
             <h1>Tenho um problema</h1>

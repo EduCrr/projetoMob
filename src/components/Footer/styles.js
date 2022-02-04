@@ -2,18 +2,18 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  background: #510889;
+  background: #5e04b3;
   background: -webkit-repeating-linear-gradient(
     to right,
-    #510889 10%,
-    #860689 46%
+    #5e04b3 16%,
+    #4a04b2 51%
   );
   background: -moz-repeating-linear-gradient(
     to right,
-    #510889 10%,
-    #860689 46%
+    #5e04b3 16%,
+    #4a04b2 51%
   );
-  background: repeating-linear-gradient(to right, #510889 10%, #860689 46%);
+  background: repeating-linear-gradient(to right, #5e04b3 16%, #4a04b2 51%);
   color: white;
   height: auto;
   overflow: hidden;
@@ -29,7 +29,10 @@ export const Container = styled.div`
     .left-side {
       width: 400px;
       .logo {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        img.logo {
+          height: 40px;
+        }
       }
     }
     .right-side {
@@ -90,5 +93,8 @@ export const Container = styled.div`
         width: 100% !important;
       }
     }
+  }
+  @media (max-width: 475px) {
+    background: #510889 !important;
   }
 `;

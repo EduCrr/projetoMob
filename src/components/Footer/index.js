@@ -7,7 +7,9 @@ export const Footer = () => {
       <Fade bottom cascade>
         <div className="content">
           <div className="left-side">
-            <div className="logo">logo</div>
+            <div className="logo">
+              <img className="logo" src="/assets/logofooter.png" />
+            </div>
             <div className="text">
               É uma plataforma que tem como propósito unir prestadores de
               serviços e pessoas que tenham interesse em contratar autônomos em

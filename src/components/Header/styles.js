@@ -6,11 +6,7 @@ export const Container = styled.div`
   max-width: 1200px;
   align-items: center;
   margin: 1.5rem auto;
-  .logo {
-    img {
-      height: 33px;
-    }
-  }
+
   .btns {
     display: flex;
     p {

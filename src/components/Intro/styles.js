@@ -9,7 +9,7 @@ export const Container = styled.div`
   color: white;
   object-fit: cover;
   width: 100%;
-  background: linear-gradient(rgb(134 6 137 /80%), rgb(134 6 137 / 80%)),
+  background: linear-gradient(rgb(94 4 179 /80%), rgb(94 4 179 / 80%)),
     url("https://images.unsplash.com/photo-1496404690491-28c5b1ecde19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=777&q=80");
   .text {
     height: inherit;
@@ -39,6 +39,11 @@ export const Container = styled.div`
         opacity: 1;
         transform: translateX(0);
       }
+    }
+  }
+  @media (max-width: 1024px) {
+    .text {
+      padding: 0px 20px;
     }
   }
   @media (max-width: 660px) {

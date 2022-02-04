@@ -4,11 +4,11 @@ export const Header = () => {
   return (
     <C.Container>
       <div className="logo">
-        <img src="/assets/logo.png" />
+        <img className="logo" src="/assets/logo.png" />
       </div>
       <div className="btns">
         <p style={{ cursor: "pointer" }}>Como Funciona?</p>
-        <S.Button color={"#860689"}>Anunciar</S.Button>
+        <S.Button color={"#5e04b3"}>Anunciar</S.Button>
       </div>
     </C.Container>
   );
