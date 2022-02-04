@@ -7,7 +7,7 @@ export const Header = () => {
         <img src="/assets/logo.png" />
       </div>
       <div className="btns">
-        <p>Como Funciona?</p>
+        <p style={{ cursor: "pointer" }}>Como Funciona?</p>
         <S.Button color={"#860689"}>Anunciar</S.Button>
       </div>
     </C.Container>

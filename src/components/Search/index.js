@@ -21,8 +21,10 @@ export const Search = () => {
           <div className="info">
             <h2>Crie uma anúncio e receba diversos orçamentos</h2>
           </div>
-          <div>
-            <Button color={"#0095ff"}>Anunciar</Button>
+          <div className="bt">
+            <Button color={"#0095ff"}>
+              Anunciar <span>Gratis</span>
+            </Button>
           </div>
         </Fade>
       </C.Banner>
@@ -44,8 +46,10 @@ export const Search = () => {
           <div className="info">
             <h2>Crie uma anúncio e receba solicitações de orçamentos</h2>
           </div>
-          <div>
-            <Button color={"#ffc800"}>Anunciar</Button>
+          <div className="bt">
+            <Button color={"#ffc800"}>
+              Anunciar <span>Gratis</span>
+            </Button>
           </div>
         </Fade>
       </C.Banner>

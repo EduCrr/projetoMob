@@ -81,6 +81,20 @@ export const Banner = styled.div`
   .info {
     margin-bottom: 30px;
   }
+  .bt span {
+    position: absolute;
+    left: 60%;
+    top: 0%;
+    z-index: 99;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    background: white;
+    color: #860689;
+    border-radius: 30px;
+    padding: 5px 20px;
+  }
   @media (max-width: 810px) {
     margin-bottom: 30px;
   }
