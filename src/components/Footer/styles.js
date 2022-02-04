@@ -2,7 +2,18 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  background-color: #860689;
+  background: #510889;
+  background: -webkit-repeating-linear-gradient(
+    to right,
+    #510889 10%,
+    #860689 46%
+  );
+  background: -moz-repeating-linear-gradient(
+    to right,
+    #510889 10%,
+    #860689 46%
+  );
+  background: repeating-linear-gradient(to right, #510889 10%, #860689 46%);
   color: white;
   height: auto;
   overflow: hidden;

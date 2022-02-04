@@ -31,6 +31,17 @@ export const Container = styled.div`
     img {
       margin: auto;
     }
+    .arrows {
+      display: flex;
+      max-width: 900px;
+      justify-content: flex-end;
+      margin-right: 40px;
+
+      img {
+        cursor: pointer;
+        height: 40px;
+      }
+    }
   }
   .mural {
     display: flex;
@@ -40,7 +51,7 @@ export const Container = styled.div`
       margin: 0px 20px;
     }
     button {
-      background-color: #fe9402;
+      background-color: #ffc800;
       color: white;
       border-radius: 30px;
       padding: 8px 50px;

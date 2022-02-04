@@ -24,7 +24,21 @@ export const Container = styled.div`
       color: white;
     }
     p {
-      color: #fe9402 !important;
+      animation: moveInRight 1s ease-out;
+      color: #ffc800 !important;
+    }
+    @keyframes moveInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(10rem);
+      }
+      80% {
+        transform: translateX(-1rem);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
   }
 `;

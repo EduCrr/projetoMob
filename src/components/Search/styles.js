@@ -49,6 +49,21 @@ export const Banner = styled.div`
   }
   &:nth-child(2) {
     background: #ff008d;
+    background: -webkit-repeating-linear-gradient(
+      to top right,
+      #ff008d 0%,
+      #fa008a 21%
+    );
+    background: -moz-repeating-linear-gradient(
+      to top right,
+      #ff008d 0%,
+      #fa008a 21%
+    );
+    background: repeating-linear-gradient(
+      to top right,
+      #ff008d 0%,
+      #fa008a 21%
+    );
   }
   h4 {
     margin-bottom: 40px !important;

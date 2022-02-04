@@ -2,8 +2,17 @@ import * as C from "./styles";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 export const About = () => {
+  const sliderRef = useRef();
+
+  const goNext = () => {
+    sliderRef.current.slickNext();
+  };
+  const goPrev = () => {
+    sliderRef.current.slickPrev();
+  };
+
   const [list, setList] = useState([
     {
       icone: "/assets/computer.png",
@@ -29,12 +38,12 @@ export const About = () => {
     },
   ]);
   const settings = {
-    dots: true,
-    infinite: false,
+    dots: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
+    arrows: false,
     slidesToScroll: 1,
-    initialSlide: 0,
     responsive: [
       {
         breakpoint: 600,
@@ -61,7 +70,7 @@ export const About = () => {
         <h2 style={{ color: "#bbb" }}>Prestador de serviço</h2>
       </div>
       <div className="items">
-        <Slider {...settings}>
+        <Slider {...settings} ref={sliderRef}>
           {list.map((item, k) => (
             <div className="single-item" key={k}>
               <img src={item.icone} alt={item.title} />
@@ -70,6 +79,14 @@ export const About = () => {
             </div>
           ))}
         </Slider>
+        <div className="arrows">
+          <div onClick={goPrev}>
+            <img src="/assets/left.png" />
+          </div>
+          <div onClick={goNext}>
+            <img src="/assets/right.png" />
+          </div>
+        </div>
       </div>
       <div className="mural">
         <h1 style={{ color: "#860689" }}>Veja nosso</h1>

@@ -21,7 +21,7 @@ export const Search = () => {
           <Button color={"#0095ff"}>Anunciar</Button>
         </div>
       </C.Banner>
-      <C.Banner color={"#fe9402"}>
+      <C.Banner color={"#ffc800"}>
         <div className="title">
           <h1>Quero mais clientes</h1>
           <h3>Vizualize as vagas na sua área</h3>
@@ -36,7 +36,7 @@ export const Search = () => {
           <h2>Crie uma anúncio e receba solicitações de orçamentos</h2>
         </div>
         <div>
-          <Button color={"#fe9402"}>Anunciar</Button>
+          <Button color={"#ffc800"}>Anunciar</Button>
         </div>
       </C.Banner>
     </C.Container>
