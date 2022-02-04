@@ -6,7 +6,9 @@ export const Container = styled.div`
   max-width: 1200px;
   align-items: center;
   margin: 1.5rem auto;
-
+  img.logo {
+    height: 45px;
+  }
   .btns {
     display: flex;
     p {
@@ -17,7 +19,7 @@ export const Container = styled.div`
     padding: 0px 10px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 475px) {
     flex-direction: column;
     .btns {
       flex-direction: column;
